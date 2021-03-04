@@ -1,0 +1,36 @@
+	*{
+		-webkit-user-select: none;   
+		-moz-user-select: none;    
+		-ms-user-select: none;    
+		user-select: none;
+	}
+	
+	
+	
+	}
+	.s-type-list label:hover,
+	.menu__link:hover,
+	.menu__link[data-submenu]:hover::after,
+	.menu__link--current::before {
+		color: #1278f6;
+	}
+	#search-text,
+	.search-type input,
+	.search-type input:hover+label,
+	.search-type input:checked+label{
+		background:rgba(0,0,0,0.356);
+		color:#fff;
+	}
+	.s-type-list
+	{
+	background:rgba(0,0,0,0.356);
+	}
+	.s-type-list:before{
+		border-bottom-color:rgba(0,0,0,0.3);
+	}
+	
+	.s-type-list label{
+		color:#fff;
+	}
+	
+	
