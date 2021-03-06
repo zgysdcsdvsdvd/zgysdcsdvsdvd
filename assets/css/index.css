@@ -1,0 +1,124 @@
+
+.youlingrq {
+	/* 弹性布局 让元素在页面中垂直+水平居中 */
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	/* 让页面占浏览器可视区域的高度 */
+	height: 25vh;
+	padding-top: 8vh;
+	padding-bottom: 0px;
+}
+.youlingrq .ghost {
+	/* 相对定位 */
+	position: absolute;
+	width: 75px;
+	height:112px;
+	/* 圆角属性 左上角和右上角为圆角 */
+	border-radius: 37px 37px 0 0;
+	background-color: #fff;
+	/* 盒子阴影 inset是内阴影 啥都不加就是默认的外阴影(outset) */
+	box-shadow: -9px 0 0 #dbdbdb inset, 0 0 25px #5939db;
+	animation: ghost 2s infinite;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	margin-top: 30px;
+	
+}
+/* 眼睛 start */
+.youlingrq .ghost .ghostEyes {
+	/* 弹性布局 */
+	display: flex;
+	/* 让元素平均分配宽度 */
+	justify-content: space-around;
+	width: 45px;
+	padding-top: 35px;
+	margin: 0 auto;
+}
+/* 利用两个伪元素做出卡姿兰大眼睛 */
+.youlingrq .ghost .ghostEyes::before,
+.youlingrq .ghost .ghostEyes::after {
+	content: "";
+	width: 8px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #00034b;
+}
+/* 眼睛 end */
+
+/* 腮红 start  */
+/* 逻辑跟眼睛一样 */
+.youlingrq .ghost .ghostDimples {
+	display: flex;
+	justify-content: space-around;
+	width: 65px;
+	padding-top: 8px;
+	margin: 0 auto;
+}
+.youlingrq .ghost .ghostDimples::before,
+.youlingrq .ghost .ghostDimples::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #ffbeff;
+}
+/* 腮红 end */
+
+/* 脚 start  */
+.youlingrq .ghost .ghostFeet {
+	/* 这个主要是向让四只脚水平排列  */
+	display: flex;
+	/* 绝对定位 */
+	position: absolute;
+	bottom: -7px;
+	width: 100%;
+}
+.youlingrq .ghost .ghostFeet .ghostFoot {
+	width: 25%;
+	height: 13px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+/* 设置一下最后一个 让它跟身体的内阴影一样 */
+.youlingrq .ghost .ghostFeet .ghostFoot:last-child {
+	/* 利用背景渐变色实现 to right 是从做到右 */
+	background-image: linear-gradient(to right, #fff 55%, #dbdbdb 45%);
+}
+/* 脚 end */
+
+/* 阴影 start */
+.youlingrq .shadow {
+	width: 75px;
+	height: 20px;
+	margin-top: 156px;
+	border-radius: 50%;
+	background-color: #000232;
+	/* 动画  名称 时长 infinite是无限次播放 */
+	animation: shadow 2s infinite;
+	padding-bottom: 5px;
+	
+}
+/* 阴影 end */
+/* 然后制作漂浮的动画 */
+@keyframes ghost {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		/* 2D位移 -15px 是向上走 */
+		transform: translateY(-15px);
+	}
+}
+@keyframes shadow {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		/* 缩放 .9比1小一点点 */
+		transform: scale(0.9);
+	}
+}
