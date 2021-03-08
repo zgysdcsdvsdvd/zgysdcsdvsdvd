@@ -1,0 +1,45 @@
+
+    
+    .neon-wrap {
+      width: 400vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      margin-top: 170px;
+    }
+    .neon-text {
+      font-family: 'Monoton', cursive;
+      font-size: 50px;
+      color: #bbdefb;
+      text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+    }
+    .neon-blink {
+      animation: neon 4s infinite;
+    }
+    .neon-clock {
+      font-family: 'Monoton', cursive;
+      font-size: 70px;
+      color: #615771;
+      text-shadow: -3px 0px 5px #ffff99, 0px 0px 2px #ffff99;
+      display:inline-block;
+    }
+   
+
+    
+    .neon-by {
+      color: #bbdefb;
+      text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+    }
+    @keyframes neon {
+      0%, 30%, 32%, 34% {
+        color: #222;
+        text-shadow: -3px 0px 5px #222, 0px 0px 2px #222; 
+      }
+      31%, 33%, 35%, 100% {
+        color: #bbdefb;
+        text-shadow: -3px 0px 5px #bbdefb, 0px 0px 2px #bbdefb;
+      }
+    }
+ 

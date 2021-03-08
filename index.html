@@ -30,9 +30,10 @@
     <link rel="stylesheet" href="../assets/css/search2.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/clock.scss">
+    <link rel="stylesheet" href="../assets/css/clock.css">
     <link rel="stylesheet" href="../assets/css/clock2.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
+   
     <script src="../assets/js/clock2.js"></script>
    
    
@@ -60,7 +61,7 @@
         z-index:-1;
         -webkit-filter:blur(2px);
         filter:blur(1px);
-        background:url(https://api.dujin.org/bing/1920.php) 0 / cover fixed;  
+        background:url(https://api.lyiqk.cn/scenery) 0 / cover fixed;  
     }
     </style>
 
@@ -387,6 +388,66 @@
  </script> 
 
 
+
+<div class="neon-wrap">
+  <div class="neon-text">
+    CL<span class="neon-blink">O</span>C<span class="neon-blink">K</span>
+  </div>
+  <div class="neon-clock">
+    <span class="timer-num">1</span> <span class="timer-num">2</span><span class="timer-sep">:</span>
+    <span class="timer-num">4</span>
+    <span class="timer-num">5</span>
+    <span class="timer-sep">:</span>
+    <span class="timer-num">7</span>
+    <span class="timer-num">8</span>
+  </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <div style="color: aliceblue;">Books Copyright©2021</div>
+</div>
+
+<script>
+  (function(w, d){
+
+    var timerCache = '',  //时间缓存
+        timerNum = d.querySelectorAll('.timer-num');  //取得dom对象
+
+    // 计时器，200ms执行一次
+    setInterval(timerUpdata, 200);
+
+    // 时间更新
+    function timerUpdata(){
+      var timerArr = timerHandler(new Date());
+      // 时间不变时立即返回
+      if(timerArr == null){
+        return;
+      }
+      //时间更新 dom
+      timerNum.forEach(function(element, index){
+        element.innerHTML = timerArr ? timerArr[index] : '-';//三元运算符，数组存在就替换
+      });
+    }
+
+    /**
+    * 时间数据处理
+    * @param {dateObj} 形参时间对象
+    * @returns {Array} 返回时间数组
+    */
+    function timerHandler(dateObj){
+      var hours = ('0' + dateObj.getHours()).slice(-2); //加 0 防止出现一位数
+      var min = ('0' + dateObj.getMinutes()).slice(-2); //通过slice 截取最后两位
+      var sec = ('0' + dateObj.getSeconds()).slice(-2);
+      var timerStr = hours + min + sec;
+      // 时间不变时返回null
+      if(timerStr == timerCache) {
+        return null;
+      }
+      timerCache = timerStr;//时间改变，更新缓存
+      return timerStr.split(''); //字符串转换数组，并返回
+    }
+  })(window, document);
+
+ 
+
+</script>
 
    </div>
 
