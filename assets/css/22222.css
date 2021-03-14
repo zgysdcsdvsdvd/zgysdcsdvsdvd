@@ -42,7 +42,7 @@
 	width: 350px;
 	/* 高度占浏览器可视区域的高度 */
 	height: 100vh;
-	background-color:#615771;
+	background-color:/*transparent;*/#615771;/* rgba(97, 86, 113, 0.5);*/
 	transition: all 0.5s;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -148,3 +148,37 @@
 	background-color: #7f99e6;
 }
 
+.banquan {
+	color:rgb(245, 237, 237);
+	align-items: center;
+	justify-content: center;
+
+}
+#footer {
+                height: 40px;
+                line-height: 40px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background:transparent;
+                color: #fff;
+                font-family: Arial;
+                font-size: 15px;
+                letter-spacing: 1px;
+				float: left;
+            }
+			#footer1 {
+                height: 40px;
+                line-height: 40px;
+                position: fixed;
+                bottom: 23px;
+                width: 100%;
+                text-align: center;
+                background:transparent;
+               
+                font-size: 15px;
+                letter-spacing: 1px;
+				
+				
+            }
