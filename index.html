@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/clock.css">
     <link rel="stylesheet" href="../assets/css/clock2.css">
+    <link rel="stylesheet" href="../assets/css/22222.css">
     <link rel="stylesheet" href="../assets/css/fonts/fontawesome/css/font-awesome.min.css">
    
     <script src="../assets/js/clock2.js"></script>
@@ -61,7 +62,7 @@
         z-index:-1;
         -webkit-filter:blur(2px);
         filter:blur(1px);
-        background:url(https://api.dujin.org/bing/1366.php) 0 / cover fixed;  
+        background:url(https://api.dujin.org/bing/1920.php) 0 / cover fixed;  
     }
     </style>
 
@@ -72,6 +73,489 @@
 <body>
     
     <div class="fullpage" style=" height:100%">
+
+
+
+
+      <div class="navbar">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">
+          <i class="fa fa-outdent"></i>
+        </label>
+
+        <ul>
+            <li class="yiji">
+              <i class="tubiao fa fa-search"></i>
+            <span>学术搜索</span>
+          </li>
+
+          <li class="erji">
+              <div class="sanji">
+                 <i class="tubiao1 fa fa-graduation-cap" style="font-size: 12px"></i>
+                 
+                 <span  onclick="window.open('https://scholar.google.com/', '_blank')">谷歌学术</span>
+              </div>
+          </li>
+          <li class="erji">
+            <div class="sanji">
+              <i class="tubiao1 fa fa-graduation-cap" style="font-size: 12px"></i>
+               <span  onclick="window.open('https://xueshu.baidu.com/', '_blank')">百度学术</span>
+            </div>
+          </li>
+          <li class="erji">
+          <div class="sanji">
+            <i class="tubiao1 fa fa-graduation-cap" style="font-size: 12px"></i>
+             <span  onclick="window.open('https://www.cnki.net/', '_blank')">知网检索</span>
+          </div>
+        </li>
+        <li class="erji">
+        <div class="sanji">
+           <i class="tubiao1 fa fa-search"></i>
+           <span  onclick="window.open('http://www.wanfangdata.com.cn/index.html', '_blank')">万方检索</span>
+        </div>
+        </li>
+    
+        <li class="erji">
+          <div class="sanji">
+             <i class="tubiao1 fa fa-search"></i>
+             <span  onclick="window.open('https://www.duxiu.com/login.jsp?backurl=&num=&username=&refer=&flag=true#', '_blank')">读秀  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          </div>
+      </li> 
+      <li class="erji">
+        <div class="sanji">
+           <i class="tubiao1 fa fa-search"></i>
+           <span  onclick="window.open('https://pass.ujs.edu.cn/cas/login?service=https%3A%2F%2Fidp.ujs.edu.cn%2Fidp%2FAuthn%2FExtCas%3Fconversation%3De2s1&entityId=https%3A%2F%2Fsp.tshhosting.com%2Fshibboleth', '_blank')">WOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </li>      
+      <li class="erji">
+        <div class="sanji">
+           <i class="tubiao1 fa fa-send"></i>
+           <span  onclick="window.open('https://www.sciencedirect.com/', '_blank')">爱思唯尔</span>
+        </div>
+    </li> 
+    <li class="erji">
+      <div class="sanji">
+         <i class="tubiao1 fa fa-send"></i>
+         <span  onclick="window.open('http://www.cqvip.com/', '_blank')">维普论文</span>
+      </div>
+</li> 
+<li class="erji">
+    <div class="sanji">
+       <i class="tubiao1 fa fa-send"></i>
+       <span  onclick="window.open('https://patents.google.com/', '_blank')">谷歌专利</span>
+    </div>
+</li> 
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send-o"></i>
+     <span  onclick="window.open('https://webvpn.ujs.edu.cn/login', '_blank')">VPN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</li> 
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send-o"></i>
+     <span  onclick="window.open('https://webvpn.ujs.edu.cn/http/77726476706e69737468656265737421e7e056d2343f6b5f72099be29b5a2e/', '_blank')">Socolar &nbsp;</span>
+  </div>
+</li> 
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send-o"></i>
+     <span  onclick="window.open('https://webvpn.ujs.edu.cn/http/77726476706e69737468656265737421e7f243d2257e6d526d0b86a49746377b4cbb62/ehost/search/basic?vid=0&sid=f7aefe58-7367-46a5-8059-e8478d964e8c%40pdc-v-sessmgr06', '_blank')">EBSCO &nbsp;</span>
+  </div>
+</li> 
+          
+         
+
+
+
+<li class="yiji">
+  <i class="tubiao fa fa-cloud-download"></i>
+<span>文献下载</span>
+</li>
+
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download" style="font-size: 12px"></i>
+ <span  onclick="window.open('https://www.cnki.net/', '_blank')">知网下载</span>
+</div>
+</li>
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download"></i>
+<span  onclick="window.open('http://www.wanfangdata.com.cn/index.html', '_blank')">万方下载</span>
+</div>
+</li>
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-cloud-download"></i>
+  <span  onclick="window.open('http://www.sci-hub.ren/', '_blank')">SCI-HUB</span>
+  </div>
+  </li> 
+  
+     
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-send"></i>
+<span  onclick="window.open('https://www.sciencedirect.com/', '_blank')">爱思唯尔</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send"></i>
+     <span  onclick="window.open('http://www.cqvip.com/', '_blank')">维普论文</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-send"></i>
+  <span  onclick="window.open('http://www.ucdrs.superlib.net/', '_blank')">图书联盟</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-download"></i>
+  <span  onclick="window.open('http://www.sci-hub.ac.cn/', '_blank')">文献小镇</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-download"></i>
+<span  onclick="window.open('https://patents.google.com/', '_blank')">谷歌专利</span>
+</div>
+</li> 
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-download"></i>
+<span  onclick="window.open('https://webvpn.ujs.edu.cn/login', '_blank')">VPN  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-book"></i>
+  <span  onclick="window.open('http://zjisa.zjlib.cn/home/zy_home.jsp#a26', '_blank')">浙江图书</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-book"></i>
+<span  onclick="window.open('http://www.gzlib.org/', '_blank')">贵州图书</span>
+</div>
+</li> 
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-book"></i>
+<span  onclick="window.open('http://res.gxlib.org.cn/ermsClient/browse.do', '_blank')">广西图书</span>
+</div>
+</li> 
+
+
+
+
+
+<li class="yiji">
+  <i class="tubiao fa fa-cloud-download"></i>
+<span>文献翻译</span>
+</li>
+
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download" style="font-size: 12px"></i>
+ <span  onclick="window.open('https://translate.google.cn/', '_blank')">谷歌翻译</span>
+</div>
+</li>
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download"></i>
+<span  onclick="window.open('https://fanyi.baidu.com/?aldtype=16047#auto/zh', '_blank')">百度翻译</span>
+</div>
+</li>
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-cloud-download"></i>
+  <span  onclick="window.open('https://niutrans.com/Trans?type=text', '_blank')">小牛翻译</span>
+  </div>
+  </li> 
+  
+     
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-send"></i>
+<span  onclick="window.open('https://www.deepl.com/translator', '_blank')">DeepL&nbsp;&nbsp; </span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send"></i>
+     <span  onclick="window.open('http://www.aixzzs.com/', '_blank')">AI写作&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-send"></i>
+  <span  onclick="window.open('https://cn.bing.com/translator/', '_blank')">必应翻译 </span>
+  </div>
+</li> 
+
+
+
+
+
+
+<li class="yiji">
+  <i class="tubiao fa fa-cloud-download"></i>
+<span>百科全书</span>
+</li>
+
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download" style="font-size: 12px"></i>
+ <span  onclick="window.open('https://zh.wikihow.com/', '_blank')">wikihow</span>
+</div>
+</li>
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download"></i>
+<span  onclick="window.open('https://www.wikipedia.org/', '_blank')">维基百科</span>
+</div>
+</li>
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-cloud-download"></i>
+  <span  onclick="window.open('https://wiki.mbalib.com/wiki/%E9%A6%96%E9%A1%B5', '_blank')">MBA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span>
+  </div>
+  </li> 
+  
+     
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-send"></i>
+<span  onclick="window.open('https://baike.baidu.com/', '_blank')">百度百科</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send"></i>
+     <span  onclick="window.open('http://www.kepu.gov.cn/www', '_blank')">科普网&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-send"></i>
+  <span  onclick="window.open('http://www.kepuchina.cn/', '_blank')">科普中国</span>
+  </div>
+</li> 
+
+        
+
+<li class="yiji">
+  <i class="tubiao fa fa-cloud-download"></i>
+<span>书籍下载</span>
+</li>
+
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download" style="font-size: 12px"></i>
+ <span  onclick="window.open('https://www.jiumodiary.com/', '_blank')">鸠摩搜书 </span>
+</div>
+</li>
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-cloud-download"></i>
+<span  onclick="window.open('http://www.ucdrs.superlib.net/', '_blank')">图书联盟</span>
+</div>
+</li>
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-cloud-download"></i>
+  <span  onclick="window.open('http://libgen.rs/', '_blank')">libgen.rs</span>
+  </div>
+  </li> 
+  
+     
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-send"></i>
+<span  onclick="window.open('https://books.google.com/', '_blank')">谷歌图书</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-send"></i>
+     <span  onclick="window.open('https://wenku.baidu.com/', '_blank')">百度文库</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-send"></i>
+  <span  onclick="window.open('https://max.book118.com/', '_blank')">原创力&nbsp; &nbsp;&nbsp;</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-download"></i>
+  <span  onclick="window.open('https://www.doc88.com/', '_blank')">道客巴巴</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-download"></i>
+<span  onclick="window.open('https://www.docin.com/', '_blank')">豆丁文库</span>
+</div>
+</li> 
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-download"></i>
+<span  onclick="window.open('https://www.dalipan.com/#/', '_blank')">大力盘&nbsp; &nbsp;&nbsp;</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-book"></i>
+  <span  onclick="window.open('https://mianbaoshu.cc/', '_blank')">面包树&nbsp; &nbsp;</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-book"></i>
+<span  onclick="window.open('https://www.luomapan.com/', '_blank')">罗马盘&nbsp; &nbsp;</span>
+</div>
+</li> 
+        
+         
+
+
+
+
+        
+
+<li class="yiji">
+  <i class="tubiao fa fa-eye"></i>
+<span>在线影视</span>
+</li>
+
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-eye" style="font-size: 12px"></i>
+ <span  onclick="window.open('https://www.pianku.li/', '_blank')">片库网&nbsp; &nbsp;</span>
+</div>
+</li>
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-eye"></i>
+<span  onclick="window.open('http://www.yingwangtv.com/', '_blank')">爱爱客&nbsp; &nbsp;</span>
+</div>
+</li>
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-eye"></i>
+  <span  onclick="window.open('https://www.cupfox.com/', '_blank')">茶杯狐&nbsp; &nbsp;</span>
+  </div>
+  </li> 
+  
+     
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-eye"></i>
+<span  onclick="window.open('https://dsys.tv/', '_blank')">大师影视</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+     <i class="tubiao1 fa fa-eye"></i>
+     <span  onclick="window.open('https://www.tcmove.com/', '_blank')">太初影视</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-eye"></i>
+  <span  onclick="window.open('https://www.shenma4480.com/type/dianying/', '_blank')">神马影视</span>
+  </div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-eye"></i>
+  <span  onclick="window.open('http://yyetss.com/', '_blank')">人人影视</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-eye"></i>
+<span  onclick="window.open('http://www.80ysm.com/', '_blank')">80影视网</span>
+</div>
+</li> 
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-eye"></i>
+<span  onclick="window.open('http://ifkdy.com/', '_blank')">疯狂影视</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-download"></i>
+  <span  onclick="window.open('http://www.btbuluo.com/', '_blank')">BT部落</span>
+  </div>
+</li> 
+
+<li class="erji">
+<div class="sanji">
+<i class="tubiao1 fa fa-download"></i>
+<span  onclick="window.open('https://www.cilixiong.com/', '_blank')">磁力熊&nbsp; &nbsp;</span>
+</div>
+</li> 
+
+<li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-eye"></i>
+  <span  onclick="window.open('https://www.iqiyi.com/', '_blank')">爱奇艺&nbsp; &nbsp;</span>
+  </div>
+  </li> 
+  
+  <li class="erji">
+    <div class="sanji">
+    <i class="tubiao1 fa fa-eye"></i>
+    <span  onclick="window.open('https://youku.com/', '_blank')">优酷&nbsp; &nbsp;&nbsp; &nbsp;</span>
+    </div>
+  </li> 
+  
+  <li class="erji">
+  <div class="sanji">
+  <i class="tubiao1 fa fa-eye"></i>
+  <span  onclick="window.open('https://v.qq.com/', '_blank')">腾讯&nbsp; &nbsp;&nbsp; &nbsp;</span>
+  </div>
+  </li> 
+
+
+
+        </ul>
+
+
+      </div>
 
 <div class="youlingrq">
         <div class="ghost">
@@ -161,7 +645,7 @@
 <li><input hidden="" type="radio" name="type" id="type-xiaomuchou" value="https://qw.duxiu.com/getPage?sw=" data-placeholder="学术科研">
   <label for="type-xiaomuchou" style="color: rgba(255, 255, 255, 0.7);"><span style="font-size: 17px;">读秀</span></label></li>		
 
-<li><input hidden="" type="radio" name="type" id="type-wanfang" value="http://s.wanfangdata.com.cn/Paper.aspx?q=" data-placeholder="万方论文">
+<li><input hidden="" type="radio" name="type" id="type-wanfang" value="http://s.wanfangdata.com.cn/paper?q=" data-placeholder="万方论文">
   <label for="type-wanfang" style="color: rgba(255, 255, 255, 0.7);"><span style="font-size: 17px;">万方</span></label></li>	
 
 <li><input hidden="" type="radio" name="type" id="type-yingxiangyinzhi" value="http://www.letpub.com.cn/index.php?page=journalapp&amp;view=search&amp;searchname=" data-placeholder="影响因子查询">
@@ -402,67 +886,11 @@
 
 
 
-<div class="neon-wrap">
-  <div class="neon-text">
-    CL<span class="neon-blink">O</span>C<span class="neon-blink">K</span>
-  </div>
-  <div class="neon-clock">
-    <span class="timer-num">1</span> <span class="timer-num">2</span><span class="timer-sep">:</span>
-    <span class="timer-num">4</span>
-    <span class="timer-num">5</span>
-    <span class="timer-sep">:</span>
-    <span class="timer-num">7</span>
-    <span class="timer-num">8</span>
-  </div><br/><br/><br/><br/><br/><br/><br/><br/>
-  <div style="color: aliceblue;">Books Copyright©2021</div>
-</div>
 
-<script>
-  (function(w, d){
-
-    var timerCache = '',  //时间缓存
-        timerNum = d.querySelectorAll('.timer-num');  //取得dom对象
-
-    // 计时器，200ms执行一次
-    setInterval(timerUpdata, 200);
-
-    // 时间更新
-    function timerUpdata(){
-      var timerArr = timerHandler(new Date());
-      // 时间不变时立即返回
-      if(timerArr == null){
-        return;
-      }
-      //时间更新 dom
-      timerNum.forEach(function(element, index){
-        element.innerHTML = timerArr ? timerArr[index] : '-';//三元运算符，数组存在就替换
-      });
-    }
-
-    /**
-    * 时间数据处理
-    * @param {dateObj} 形参时间对象
-    * @returns {Array} 返回时间数组
-    */
-    function timerHandler(dateObj){
-      var hours = ('0' + dateObj.getHours()).slice(-2); //加 0 防止出现一位数
-      var min = ('0' + dateObj.getMinutes()).slice(-2); //通过slice 截取最后两位
-      var sec = ('0' + dateObj.getSeconds()).slice(-2);
-      var timerStr = hours + min + sec;
-      // 时间不变时返回null
-      if(timerStr == timerCache) {
-        return null;
-      }
-      timerCache = timerStr;//时间改变，更新缓存
-      return timerStr.split(''); //字符串转换数组，并返回
-    }
-  })(window, document);
 
  
 
-</script>
 
-   </div>
 
 </body>
 

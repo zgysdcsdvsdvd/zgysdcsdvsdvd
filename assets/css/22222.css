@@ -1,0 +1,150 @@
+/* 观看此视频之前可以看一下上个视频简介 接上个视频发的哈 */
+* {
+	/* 初始化 清除元素的内外边距 */
+	padding: 0;
+	margin: 0;
+	/* 盒子模型 */
+	box-sizing: border-box;
+}
+
+.navbar {
+	/* 相对定位 */
+	position: relative;
+	width: 100%;
+	height: 0px;
+	line-height: 50px;
+	background-color: #fff;
+	
+	/* 盒子阴影 */
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	
+}
+.navbar input {
+	/* 隐藏元素 */
+	display: none;
+}
+.navbar label {
+	/* 绝对定位 */
+	position: absolute;
+	top: 0;
+	left: 0px;
+	font-size: 20px;
+	color: rgb(247, 241, 241);
+	padding-left: 20px;
+	cursor: pointer;
+	/* 加过渡 */
+	transition: all 0.5s;}
+	
+.navbar ul {
+    position: absolute;
+	top: 0;
+	left: -350px;
+	width: 350px;
+	/* 高度占浏览器可视区域的高度 */
+	height: 100vh;
+	background-color:#615771;
+	transition: all 0.5s;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-bottom: 25px;
+	
+
+}
+
+
+.navbar ul::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 0px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+	
+}
+/*.navbar ul::-webkit-scrollbar-thumb 
+{滚动条里面小方块
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px #7c97eb);
+	background: #7c97eb;
+}
+
+.navbar ul::-webkit-scrollbar-track {/*滚动条里面轨道
+	-webkit-box-shadow: inset 0 0 5px rgba(248, 101, 101, 0.2);
+	border-radius: 0;
+	background: rgb(121, 119, 119);
+}*/
+
+
+.navbar input:checked + label {
+	left:350px;
+}
+.navbar input:checked + label i {
+	/* 沿着y轴旋转180度 */
+	transform: rotateY(180deg);
+}
+.navbar input:checked ~ ul {
+	left: 0px ;
+}
+
+
+.yiji {
+	color: aliceblue;
+	padding-top: 22px;
+	padding-left: 125px;
+	/*margin-top:30px ;*/
+	font-size: 20px;
+	list-style:none;
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	
+}
+
+.yiji1 {
+	color: aliceblue;
+	/*padding-top: 22px;*/
+	padding-left: 25px;
+	/*margin-top:30px ;*/
+	font-size: 20px;
+	list-style:none;
+	float: left;
+	width: 100%;
+	
+}
+
+.erji {
+	color: aliceblue;
+	/*padding: 6px;*/
+	padding-left: 20px;
+/*	margin-top:30px ;*/
+	font-size: 14px;
+	float: left;
+	height: 50px;
+	width: 110px;
+	list-style:none;
+	padding-bottom: 40px;
+	
+/*	display: inline-block;*/
+	
+}
+
+.sanji{
+	line-height: 22px;
+	
+	display: inline-block;
+	background-color: #4e4e4e;
+	padding: 6px;
+	border-radius: 5px;
+	
+}
+.tubiao{
+	font-size: 20px;
+}
+
+.tubiao1{
+	font-size: 8px;
+}
+.fa-graduation-cap{
+	font-size: 8px;
+}
+
+.sanji:hover{
+	background-color: #7f99e6;
+}
+

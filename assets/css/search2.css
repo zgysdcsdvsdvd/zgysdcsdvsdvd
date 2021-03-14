@@ -12,7 +12,7 @@
 }
 
 #search {
-	min-width: 900px;
+	min-width: 600px; max-width: 1000px;
 	/* margin: 5px auto 14px */	
     margin: -15px auto -15px;
 	
