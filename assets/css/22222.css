@@ -168,17 +168,12 @@
                 letter-spacing: 1px;
 				float: left;
             }
-			#footer1 {
-                height: 40px;
-                line-height: 40px;
-                position: fixed;
-                bottom: 23px;
-                width: 100%;
-                text-align: center;
-                background:transparent;
-               
-                font-size: 15px;
-                letter-spacing: 1px;
+			
+			.last{
+				text-decoration:none;
+
+			}
+			.last:hover{
+				color: rgb(8, 100, 100);
 				
-				
-            }
+			}
