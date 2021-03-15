@@ -42,7 +42,7 @@
 	width: 350px;
 	/* 高度占浏览器可视区域的高度 */
 	height: 100vh;
-	background-color:/*transparent;*/#615771;/* rgba(97, 86, 113, 0.5);*/
+	background-color:/*transparent;*/#804567;/* rgba(97, 86, 113, 0.5);*/
 	transition: all 0.5s;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -113,25 +113,37 @@
 	/*padding: 6px;*/
 	padding-left: 20px;
 /*	margin-top:30px ;*/
-	font-size: 14px;
+	/*font-size: 14px;*/
 	float: left;
-	height: 50px;
-	width: 110px;
+	height: 80px;
+	width: 80px;
 	list-style:none;
-	padding-bottom: 40px;
+	
+	/*padding-bottom: 70px;*/
 	
 /*	display: inline-block;*/
 	
 }
 
+
 .sanji{
-	line-height: 22px;
-	
+	line-height: 0;
+	height: 56px;
+	width: 56px;
+
 	display: inline-block;
-	background-color: #4e4e4e;
-	padding: 6px;
-	border-radius: 5px;
-	
+	background-color: #fafafa;
+	/*padding: 8px;*/
+	border-radius: 8px;
+	box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5);
+
+}
+
+.svg{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 8px;
 }
 .tubiao{
 	font-size: 20px;
@@ -140,14 +152,20 @@
 .tubiao1{
 	font-size: 8px;
 }
-.fa-graduation-cap{
-	font-size: 8px;
-}
+
 
 .sanji:hover{
-	background-color: #7f99e6;
+	background-color: #f1e8e8;
+	margin-top: 5px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	
 }
-
+.sanji:hover::after{
+	transition: all 0.5s ease;
+}
 .banquan {
 	color:rgb(245, 237, 237);
 	align-items: center;
@@ -177,3 +195,15 @@
 				color: rgb(8, 100, 100);
 				
 			}
+
+
+			#mytitle {
+				position: absolute;
+				color: #ffffff;
+				font-size: 14px;
+				padding: 4px;
+				background: rgba(40, 40, 40, 0.8);
+				border-radius:5px;
+				z-index:999;
+			}
+		
